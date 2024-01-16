@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI_TEXTIMG</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/funcionalidad.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI_TEXTIMG BY <a href="https://github.com/isradev-git">NETWAVE</a></h1>
+        </header>
+        <main>
+            <p>Escriba su mensaje aquí para generar imágenes con el poder de la IA. Cuanto más específico sea tu prompt (descripción), más probabilidades hay de que la IA genere una imagen que se ajuste a tus expectativas:</p>
+            <form action=""  class="gen-form">
+                <input type="text" id="user-prompt" placeholder="Escribe tu prompt aquí..." autocomplete="off">
+                <button type="button" id="generate">Generar</button>
+            </form>
+
+            <div class="result">
+                <span class="loading" id="loading">Generando...</span>
+                <span class="image-grid" id="image-grid"></span>
+            </div>
+        </main>
+    </div>
+    <!-- <script src="./js/test.js"></script> -->
+</body>
+</html>

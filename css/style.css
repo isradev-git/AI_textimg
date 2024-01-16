@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    --bg: #302c42;
+    --blanco: #ffffff;
+    --beige: #ccc;
+    --negro: #000000;
+    --rgba: rgba(0, 0, 0, 0.1);
+    /* --principal:; */
+    /* --secundario:; */
+}
+body {
+    background-color: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 40rem;
+    color: var(--blanco);
+    background: var(--rgba);
+    padding: 20px 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px var(--rgba);
+    backdrop-filter: blur(7.4px);
+    -webkit-backdrop-filter: blur(7.4px);
+    border: 1px solid var(--rgba);
+}
+.container::before{
+    content: "";
+    position: absolute;
+    background-color: #c915cc;
+    width: 120px;
+    height: 120px;
+    filter: blur(120px);
+    left: -20%;
+    top: 10%;
+    z-index: -50;
+}
+.container::after{
+    content: "";
+    position: absolute;
+    background-color: #675afe;
+    width: 120px;
+    height: 120px;
+    filter: blur(120px);
+    right: -20%;
+    bottom: 10%;
+    z-index: -50;
+}
+h1{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+h1 a{
+    text-decoration: none;
+    color: #e74384;
+}
+h1 a:hover{
+    color: #ec5b95;
+}
+p{
+    font-size: 14px;
+    color: var(--beige);
+    line-height: 1.4rem;
+    text-align: center;
+}
+.gen-form{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+input{
+    width: 80%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 0 15px;
+    background-color: transparent;
+    color: var(--blanco);
+    border: 1px solid #999;
+    transition: all 0.3s ease;
+}
+input:hover, input:focus{
+    border-color: #675afe;
+}
+button{
+    width: 20%;
+    height: 36px;
+    color: var(--blanco);
+    border: 1px solid var(--beige);
+    background: #20232c8c;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+button:hover, button:focus{
+    border-color: #675afe;
+    color: #675afe;
+}
+#loading{
+    display: none;
+    font-size: 18px;
+    margin: 10px 0;
+}
